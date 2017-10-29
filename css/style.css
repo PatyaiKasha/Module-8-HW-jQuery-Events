@@ -6,10 +6,12 @@
 
 .wrapper {
   box-shadow: 0 0 24px;
-  height: 100%;
   margin: 0 auto;
   max-width: 900px;
   padding: 24px;
   width: 80%; }
+
+input {
+  margin: 8px 0; }
 
 /*# sourceMappingURL=style.css.map */

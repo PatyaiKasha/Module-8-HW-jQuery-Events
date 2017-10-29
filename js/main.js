@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $('#res-btn').on('click', inputRes);
+    $('#res-btn').on('click', passGen);
 });
 
-function inputRes(argument) {
+function passGen(argument) {
     var innStr = $('#url').val();
 
     // Удаляем локальную зону
