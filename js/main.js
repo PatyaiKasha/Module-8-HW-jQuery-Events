@@ -16,19 +16,14 @@ function inputRes(argument) {
 
     if (searchProtocol1 != -1) {
         var searchStr2 = searchStr1.slice(searchProtocol1 + 1, searchStr1.length);
-        // $('#out').html(searchStr2);
     } else if (searchProtocol2 != -1) {
         var searchStr2 = searchStr1.slice(searchProtocol2 + 1, searchStr1.length);
-        // $('#out').html(searchStr2);
     } else if (searchProtocol2 == -1) {
         var searchStr2 = searchStr1.slice(searchProtocol2 + 1, searchStr1.length);
-        // $('#out').html(searchStr2);
     }
 
-    $('#out').html(searchStr2);
+    // Замена символов при помощи регулярных выражений
+    var searchStr3 = searchStr2.replace(/o/gi, '0').replace(/l/gi, '1').replace(/i/gi, '3').replace(/s/gi, '5');
 
-    var out = $('#out').text();
-
-
-
+    $('#out').html(searchStr3);
 }
