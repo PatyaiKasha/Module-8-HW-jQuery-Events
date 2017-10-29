@@ -24,6 +24,7 @@ function passGen(argument) {
     // Замена символов при помощи регулярных выражений
     var searchStr3 = searchStr2.replace(/o/gi, '0').replace(/l/gi, '1').replace(/i/gi, '3').replace(/s/gi, '5');
 
+    // Добавляем четыре случайных символа
     var charStr = '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
     var newRndStr = '';
     for (var i = 0; i < 4; i++) {
